@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
 import { UrlseguraPipe } from './pipes/urlsegura.pipe';
+import { ShowPassPipe } from './pipes/show-pass.pipe';
 registerLocaleData(localeEs);
 
 @NgModule({
   declarations: [
     AppComponent,
-    UrlseguraPipe
+    UrlseguraPipe,
+    ShowPassPipe
   ],
   imports: [
     BrowserModule

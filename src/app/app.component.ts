@@ -14,6 +14,8 @@ export class AppComponent {
   pago = 3.24450;
   fecha = new Date();
   video = "FT1lzUrVY_Y";
+  contrasena = "t7tvukad";
+  mostrarPass = false;
   valorDePromesa = new Promise((resolve, reject)=>{
      setTimeout(()=>resolve('Llego la data'), 950)
   })

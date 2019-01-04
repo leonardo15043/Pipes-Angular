@@ -106,6 +106,13 @@
         <td> date:'MMMM - dd' </td>
         <td> {{ fecha | date:'MMMM - dd' }} </td>
       </tr>
+      <tr>
+        <td> {{ contrasena }} </td>
+        <td>
+          showPass <button (click)="mostrarPass = ! mostrarPass" type="button" name="button" class="btn btn-outline-primary">Mostrar / Ocultar</button>
+        </td>
+        <td> {{ contrasena | showPass:mostrarPass }} </td>
+      </tr>
 
     </tbody>
   </table>
