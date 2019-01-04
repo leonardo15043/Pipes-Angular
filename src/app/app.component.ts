@@ -12,10 +12,12 @@ export class AppComponent {
   pi = Math.PI;
   a = 0.4523765;
   pago = 3.24450;
-
+  fecha = new Date();
   valorDePromesa = new Promise((resolve, reject)=>{
      setTimeout(()=>resolve('Llego la data'), 950)
   })
+
+
 
 
 }
