@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 
 import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
+import { UrlseguraPipe } from './pipes/urlsegura.pipe';
 registerLocaleData(localeEs);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UrlseguraPipe
   ],
   imports: [
     BrowserModule
