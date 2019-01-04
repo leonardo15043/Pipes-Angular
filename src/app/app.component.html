@@ -66,6 +66,26 @@
         <td> percent:'2.1-3'   </td>
         <td> {{ a | percent:'2.1-3' }} </td> <!-- 'dos caracteres antes del punto | minimo 1 decimal | maximo 3 decimales' -->
       </tr>
+      <tr>
+        <td> {{ pago }} </td>
+        <td> currency </td>
+        <td> {{ pago | currency }} </td>
+      </tr>
+      <tr>
+        <td> {{ pago }} </td>
+        <td> currency:'EUR' </td>
+        <td> {{ pago | currency:'EUR' }} </td>
+      </tr>
+      <tr>
+        <td> {{ pago }} </td>
+        <td> currency:'EUR':false </td>
+        <td> {{ pago | currency:'EUR':false }} </td>
+      </tr>
+      <tr>
+        <td> {{ pago }} </td>
+        <td> currency:COP:true:'2.0-3 </td>
+        <td> {{ pago | currency:COP:true:'2.0-3' }} </td>
+      </tr>
 
     </tbody>
   </table>
