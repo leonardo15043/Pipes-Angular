@@ -16,8 +16,26 @@ export class AppComponent {
   valorDePromesa = new Promise((resolve, reject)=>{
      setTimeout(()=>resolve('Llego la data'), 950)
   })
-
-
-
+  obj = {
+      "/pets": {
+        "get": {
+          "description": "Returns all pets from the system that the user has access to",
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "A list of pets.",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/pet"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
 
 }
