@@ -7,13 +7,15 @@ import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
 import { UrlseguraPipe } from './pipes/urlsegura.pipe';
 import { ShowPassPipe } from './pipes/show-pass.pipe';
+import { KeyArrayPipe } from './pipes/key-array.pipe';
 registerLocaleData(localeEs);
 
 @NgModule({
   declarations: [
     AppComponent,
     UrlseguraPipe,
-    ShowPassPipe
+    ShowPassPipe,
+    KeyArrayPipe
   ],
   imports: [
     BrowserModule

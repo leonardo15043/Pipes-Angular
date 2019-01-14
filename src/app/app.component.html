@@ -116,6 +116,24 @@
 
     </tbody>
   </table>
+  <h4>De objeto a Array</h4>
+  <table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Casa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let k of heroes | keyArray; let i = index">
+      <td>{{ i + 1}}</td>
+      <td>{{ heroes[k].nombre }}</td>
+      <td>{{ heroes[k].casa }}</td>
+    </tr>
+  </tbody>
+  </table>
+
   <h4>JOSN</h4>
   <pre>
     {{ obj | json }}

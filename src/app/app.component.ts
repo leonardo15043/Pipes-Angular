@@ -41,4 +41,6 @@ export class AppComponent {
       }
     }
 
+  heroes = {"-LW8qNKxYI03V97GZVB8":{"bio":"nnnn","casa":"Marvel","nombre":"leonardo arturo hernandez espinosa"},"-LW8v4ZsLZoE-2Xs5DIt":{"bio":"sdsadas","casa":"DC","nombre":"arturo2"},"-LW8wjkBE2zvCEYjlant":{"bio":"dsadasdasda","casa":"DC","nombre":"norman hernandez"},"-LW94YEY9cS7CoByTxa6":{"bio":"fdsfsdf","casa":"DC","nombre":"leonardo arturo hernandez espinosa m"}}
+
 }
